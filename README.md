@@ -1,18 +1,22 @@
 # sapper-template
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, with branches for Rollup and webpack. To clone it and get started:
+> :warning: **WARNING** :warning:
+>
+> This template doesn't work just yet. See issue #1.
+
+The default [Sapper](https://github.com/sveltejs/sapper) template plus [Contently](https://github.com/krmax44/contently).
 
 ```bash
 # for Rollup
-npx degit "sveltejs/sapper-template#rollup" my-app
+npx degit "krmax44/sapper-template-contently#rollup" my-app
 # for webpack
-npx degit "sveltejs/sapper-template#webpack" my-app
+npx degit "krmax44/sapper-template-contently#webpack" my-app
 cd my-app
 npm install # or yarn!
 npm run dev
 ```
 
-Open up [localhost:3000](http://localhost:3000) and start clicking around.
+Open up [localhost:3000](http://localhost:3000) and start clicking around. Check out [`src/routes/blog/_posts.js`](https://github.com/krmax44/sapper-template-contently/blob/master/src/routes/blog/_posts.js) in particular!
 
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
 
