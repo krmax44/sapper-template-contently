@@ -1,11 +1,14 @@
 import posts from './_posts.js';
 
-const contents = JSON.stringify(posts.map(post => {
-	return {
-		title: post.title,
-		slug: post.slug
-	};
-}));
+let contents;
+(async () => {
+	contents = JSON.stringify((await posts()).map(post => {
+		return {
+			title: post.attributes.title,
+			slug: post.slug
+		};
+	}));
+})();
 
 export function get(req, res) {
 	res.writeHead(200, {

@@ -54,11 +54,11 @@
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{post.attributes.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>{post.attributes.title}</h1>
 
 <div class='content'>
-	{@html post.html}
+	{@html post.data}
 </div>
