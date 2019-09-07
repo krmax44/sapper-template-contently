@@ -16,4 +16,4 @@ WEBPACK=webpack
 ./create-branches.sh $DEFAULT $ROLLUP $WEBPACK
 
 # force push rollup and webpack branches
-git push git@github.com:sveltejs/sapper-template.git $ROLLUP $WEBPACK -f
+git push git@github.com:krmax44/sapper-template-contently.git $ROLLUP $WEBPACK -f
